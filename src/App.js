@@ -6,6 +6,7 @@ import CustomNavbar from '../src/components/navbar';
 import StartRenewal from './pages/StartRenewal';
 import ShowDifferences from './pages/ShowDifferences';
 import "../src/App.css";
+import Home from './pages/Home';
 function App() {
   return (
     
@@ -15,6 +16,7 @@ function App() {
     
     {/* Switch component renders the first matching route */}
     <Routes>
+      <Route path="/" element={<Home />} />,
       <Route path="/StartRenewal" element={<StartRenewal />} />,
       <Route path="/ShowDifferences" element={<ShowDifferences />} />
           {/* You can add more routes as needed */}
