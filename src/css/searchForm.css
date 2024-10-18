@@ -1,0 +1,41 @@
+/* SearchForm.css */
+
+.accordion-header {
+    font-weight: bold;
+    font-size: 1.1rem;
+  }
+  
+  .form-label {
+    font-weight: bold;
+  }
+  
+  button {
+    background-color: #007bff;
+    border-color: #f1f2f4;
+  }
+  
+  button:hover {
+    background-color: #cfe2ff;
+    border-color: #0056b3;
+    font-weight: bold;
+  }
+  
+  .container {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+  }
+  
+  .accordion-body {
+    background-color: #ffffff;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  
+
+  .accordion-button:focus {
+    box-shadow: none;
+  }

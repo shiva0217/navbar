@@ -22,7 +22,7 @@
 }
 
 .navbar .ml-auto .nav-link {
-  color: #333;
+  color: #f5f3f3;
   padding-left: 5px;
   padding-right: 5px;
 }
@@ -58,7 +58,7 @@
 }
 
 .user-info a {
-  color: #007bff;
+  color: #4f5358;
   text-decoration: none;
 }
 
@@ -94,7 +94,7 @@
 /* Navigation Bar */
 .nav-bar {
   background-color: #0984c2; /* Solid blue background for the nav bar */
-  padding: 0.5rem 0;
+  padding: 0rem 0;
 }
 .style{
   padding-top: 10px; 
@@ -105,5 +105,26 @@
 }
 
 
+/* Highlight the active link */
+.nav-links .nav-link.active {
+  background-color: #0056b3;  /* Darker blue background for active link */
+  border-radius: 5px;
+  color: white !important;     /* Keep text white */
+}
+
+.nav-links .active {
+  background-color: #007bff; /* Active button background */
+  color: white; /* Active button text */
+}
+
+.nav-links .btn {
+  border-radius: 5px;
+  padding: 0.5rem 1.5rem;
+  font-size: 1rem;
+}
+
+.btn {
+  color: #fff;
+}
 
 

@@ -1,0 +1,15 @@
+.plan-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .plan-table th,
+  .plan-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  .plan-table th {
+    background-color: #f2f2f2;
+  }

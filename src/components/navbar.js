@@ -1,9 +1,16 @@
-import React from 'react';
-import { Navbar, Nav, Container } from 'react-bootstrap';
+import {React,useState} from 'react';
+import { Navbar, Nav } from 'react-bootstrap';
+import { NavLink } from 'react-router-dom';
+// import StartRenewal from '../pages/StartRenewal';
 import '../App.css'; // Custom CSS file for extra styling
 import logo from '../images/logo2.png'
 
 const CustomNavbar = () => {
+  const [activeTab, setActiveLink] = useState("#ShowDifferences"); // Set default active link
+
+  const handleSetActive = (tabName) => {
+    setActiveLink(tabName);  // Update the active link when clicked
+  };
   return (
     <div className="header-wrapper">
       {/* First row with the logo and title */}
@@ -25,12 +32,23 @@ const CustomNavbar = () => {
 
       {/* Second row with the blue navigation bar */}
       <Navbar className="nav-bar" expand="lg">
-        <Container className="p-0">
-          <Nav className="mr-auto nav-links">
-            <Nav.Link href="#StartRenewal">Start Renewal</Nav.Link> 
-            <Nav.Link href="#ShowDifferences">Show Differences</Nav.Link>
-          </Nav>
-        </Container>
+                  <Nav className="mr-auto nav-link">
+                  <NavLink
+              exact to ="./StartRenewal"
+              className={`btn ${activeTab === "#StartRenewal" ? "btn-primary active" : ""} mx-2`}
+              onClick={() => handleSetActive("#StartRenewal")}
+            >
+              Start Renewal
+            </NavLink>
+            <NavLink 
+              to="./ShowDifferences"
+              className={`btn ${activeTab === "#ShowDifferences" ? "btn-primary active" : ""} mx-2`}
+              onClick={() => handleSetActive("#ShowDifferences")}
+            >
+              Show Differences
+            </NavLink> 
+            </Nav>
+        
       </Navbar>
     </div>
   );
